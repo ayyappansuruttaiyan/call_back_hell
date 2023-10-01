@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700&display=swap");
+body {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  background: linear-gradient(to right, #2e97a7 0%, #024550);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  position: relative;
+  border-radius: 1rem 3rem;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 330px;
+  transition: all 0.75s;
+}
+.box:hover {
+  transition: all 0.75s;
+  border-radius: 3rem 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.box:hover > img {
+  width: 160px;
+}
+.box:hover > h1 {
+  font-size: 2.8rem;
+}
+p {
+  top: 35%;
+  position: absolute;
+  font-size: 2rem;
+  text-transform: uppercase;
+  word-spacing: 1rem;
+  letter-spacing: 0.3rem;
+  color: #ddd;
+}
+h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  position: absolute;
+  top: 45%;
+  color: #ddd;
+  text-transform: uppercase;
+  word-spacing: 1rem;
+  letter-spacing: 0.2rem;
+  transition: all 0.75s;
+}
+img {
+  transition: all 0.75s;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 25%;
+  left: 50%;
+  width: 150px;
+}
+.hidden {
+  display: none;
+}
